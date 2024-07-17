@@ -534,6 +534,10 @@
   #define CFG_TUH_MSC    0
 #endif
 
+#ifndef CFG_TUH_USBTMC
+  #define CFG_TUH_USBTMC 0
+#endif
+
 #ifndef CFG_TUH_VENDOR
   #define CFG_TUH_VENDOR 0
 #endif

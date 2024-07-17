@@ -185,6 +185,18 @@ static usbh_class_driver_t const usbh_class_drivers[] = {
     },
     #endif
 
+    #if CFG_TUH_USBTMC
+    {
+        .name       = DRIVER_NAME("USBTMC"),
+        .init       = usbtmch_init,
+        .deinit     = usbtmch_deinit,
+        .open       = usbtmch_open,
+        .set_config = usbtmch_set_config,
+        .xfer_cb    = usbtmch_xfer_cb,
+        .close      = usbtmch_close
+    }
+    #endif
+
     #if CFG_TUH_VENDOR
     {
       .name       = DRIVER_NAME("VENDOR"),

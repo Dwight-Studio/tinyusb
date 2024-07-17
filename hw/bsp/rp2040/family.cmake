@@ -101,6 +101,7 @@ target_sources(tinyusb_host_base INTERFACE
 		${TOP}/src/class/cdc/cdc_host.c
 		${TOP}/src/class/hid/hid_host.c
 		${TOP}/src/class/msc/msc_host.c
+		${TOP}/src/class/usbtmc/usbtmc_host.c
 		${TOP}/src/class/vendor/vendor_host.c
 		)
 

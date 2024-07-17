@@ -59,6 +59,10 @@
     #include "class/cdc/cdc_host.h"
   #endif
 
+  #if CFG_TUH_USBTMC
+    #include "class/usbtmc/usbtmc_host.h"
+  #endif
+
   #if CFG_TUH_VENDOR
     #include "class/vendor/vendor_host.h"
   #endif

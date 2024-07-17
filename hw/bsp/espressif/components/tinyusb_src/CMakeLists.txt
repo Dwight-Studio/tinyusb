@@ -37,6 +37,7 @@ list(APPEND srcs
   ${tusb_src}/class/cdc/cdc_host.c
   ${tusb_src}/class/hid/hid_host.c
   ${tusb_src}/class/msc/msc_host.c
+  ${tusb_src}/class/usbtmc/usbtmc_host.c
   ${tusb_src}/class/vendor/vendor_host.c
   )
 
